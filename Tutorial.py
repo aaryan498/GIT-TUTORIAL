@@ -32,6 +32,8 @@ git push -u origin main → Uploads your local files to GitHub for the first tim
 
 # Process to do 
 
+# CASE 1: TO PUSH A PROJECT FOLDER INTO DESIRED REPOSITORY ON GITHUB 
+
 # STEP 1: Connecting Folder with Repository
 '''
 git init
@@ -122,7 +124,7 @@ git push
 AND THE CHANGES GETS PUSHED INTO THE REPOSITORY
 '''
 
-# If you get another folder/files to push into separate repository ~ FOLLOW COMMAND:
+# CASE 2: If you get another different folder/files to push into separate/ different repository ~ FOLLOW COMMAND:
 '''
 git init
 git remote add origin (ADD REPOSITORY LINK)
@@ -133,6 +135,22 @@ git branch -M main
 git push -u origin main
 NOTE: THIS IS FOR FIRST PUSH, FOR FURTHER PUSH USE:
 git push 
+'''
+
+
+
+
+# CASE 3: GETTING BACK TO PREVIOUS FOLDER/PROJECT AND PUSHING IT TO GITHUB
+'''
+ When you open a existing project folder it is from before linked to the repository which you linked this folder with initially...
+ But to check type:
+ git remote -v
+It should show the URL of your first GitHub repo (the one where you pushed Day1, Day2)
+
+then type:
+git add .
+git commit -m "Day 2: Added new code"
+git push
 '''
 
 

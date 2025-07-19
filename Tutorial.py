@@ -121,6 +121,22 @@ git push
 
 AND THE CHANGES GETS PUSHED INTO THE REPOSITORY
 '''
+
+# If you get another folder/files to push into separate repository ~ FOLLOW COMMAND:
+'''
+git init
+git remote add origin (ADD REPOSITORY LINK)
+git remote -v
+git add .
+git commit -m "COMMIT MESSAGE"
+git branch -M main
+git push -u origin main
+NOTE: THIS IS FOR FIRST PUSH, FOR FURTHER PUSH USE:
+git push 
+'''
+
+
+
 STATUS="COMPLETED SUCCESSFULLY"
 print("The Git Pushing Tutorial is",STATUS,sep=" ~ ")
 
